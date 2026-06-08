@@ -41,6 +41,6 @@ I learned to design a Bash end-to-end pipeline to extract streaming CSV  data, t
 ## Stack
 
 - bash
-- curl
+- curl | grep | sed
 - GDAL / ogr2ogr
 - GeoParquet
