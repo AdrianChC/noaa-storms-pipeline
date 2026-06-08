@@ -33,7 +33,9 @@ To run for a specific year:
 
 ## What I learned
 
-I learned to design a Bash end-to-end pipeline to extract streaming CSV  data, transform it into a ready-to-use geospatial format with GDAL, and upload it into a GitHub repository. I did not expect making commits to GitHub to be so difficult to understand. But once connection is set up, becomes easy to keep making commits. **Next Steps:** Scale it up by adding the ability to extract multiple years, the details and fatalities datasets.
+I learned to design a Bash end-to-end pipeline to extract streaming CSV  data, transform it into a ready-to-use geospatial format with GDAL, and upload it into a GitHub repository. I did not expect making commits to GitHub to be so difficult to understand. But once connection is set up, becomes easy to keep making commits. 
+
+**Next Steps:** Scale it up by adding the ability to extract multiple years, the details and fatalities datasets.
 
 
 ## Stack
