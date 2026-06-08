@@ -46,7 +46,7 @@ OUT_PARQUET="../processed/${FILE_PREFIX}_${YEAR}.parquet"
 # Step 1: Set up directories
 # ---------------------------
 
-echo "[1/4] Setting up directories"
+echo "[1/3] Setting up directories"
 # [TODO] Use mkdir -p to create RAW_DIR and PROCESSED_DIR. 
 # Both should be safe to call even if the directories already exist.
 
@@ -58,8 +58,9 @@ echo ""
 # Step 2: Download the raw file
 # ------------------------------
 
-echo "[2/4] Streaming directory listing and downloading files"
+echo "[2/3] Streaming directory listing and downloading files"
 echo ""
+# [TODO] Use curl, grep and sed to stream light download csv files
 
 # set current directory to data/raw
 cd "$RAW_DIR"
@@ -94,8 +95,9 @@ echo ""
 # Step 3: Convert CSV files into a single GeoParquet
 # -----------------------------------------------------
 
-echo "[3/4] Converting to GeoParquet"
+echo "[3/3] Converting to GeoParquet"
 echo ""
+# [TODO] Use ogr2ogr to merge CSV files into a GeoParquet file at OUT_PARQUET.
 
 # Merge all CSV files into a GeoParquet file at OUT_PARQUET
 ogr2ogr \
